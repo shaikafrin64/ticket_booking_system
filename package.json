@@ -1,0 +1,17 @@
+{
+  "name": "ticket_booking_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"cyan,magenta\" \"npm run backend\" \"npm run frontend\"",
+    "backend": "bash -c 'source ~/.sdkman/bin/sdkman-init.sh && cd backend && ./mvnw spring-boot:run'",
+    "frontend": "bash -c 'source ~/.nvm/nvm.sh && cd frontend && npm run dev'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
